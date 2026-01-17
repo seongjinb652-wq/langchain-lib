@@ -15,7 +15,7 @@ streamlit run <파일명>.py
 하위 구조 없음.
 
 ## 프로젝트 구조
-```
+```bash
 streamlit/
 ├── 01_hello_streamlit.py
 ├── 02_streamlit_layout.py
@@ -28,7 +28,8 @@ streamlit/
 └── README.md
 ```
 
-주요 파일 요약
+## 주요 파일 요약
+```bash
 01_hello_streamlit.py  
 기본 사용법 예제 (타이틀, 텍스트 출력, 입력창)
 
