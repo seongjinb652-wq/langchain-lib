@@ -1,5 +1,5 @@
 # ------------------------------------------------------------
-# 파일명: 05_streamlit_dataframe_chart.py
+# 파일명: 04_streamlit_dataframe_chart.py
 # 목적: Streamlit을 활용하여 데이터프레임, 정적 테이블, 차트(Line/Bar) 표시
 # 작성자: 성진
 # 작성일: 2026-01-17
