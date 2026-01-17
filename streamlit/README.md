@@ -1,7 +1,16 @@
-## 프로젝트 개요 : 재사용 용이하도록 streamlit 재구성
-## 설치/실행 방법 : streamlit run   xxxxx.py
-## 디렉터리 구조 : 하위 구조 없음.
-## 주요 기능 요약 : 파일명 일치.
+# Streamlit Demo Project
+
+## 프로젝트 개요
+재사용이 용이하도록 Streamlit 예제들을 재구성한 프로젝트입니다.  
+기본 사용법부터 레이아웃, 입력 폼, 데이터 시각화, 세션 상태 관리, 부하 테스트까지 포함합니다.
+
+## 설치 및 실행 방법
+```bash
+pip install streamlit pandas
+streamlit run <파일명>.py
+## 디렉터리 구조
+하위 구조 없음.
+
 ## 프로젝트 구조
 ```
 streamlit/
@@ -15,39 +24,23 @@ streamlit/
 ├── 
 └── README.md
 ```
+```
+주요 파일 요약
+01_hello_streamlit.py  
+기본 사용법 예제 (타이틀, 텍스트 출력, 입력창)
 
-## 파일명: 01_hello_streamlit.py 
-- 목적: Streamlit 기본 사용법 
-- 실행: streamlit run 01_hello_streamlit.py
-- 주요 기능: 타이틀, 텍스트 출력, 입력창
+02_streamlit_layout.py  
+레이아웃 요소 실습 (섹션, 구분선, 확장탭)
 
-## 파일명: 02_streamlit_layout.py
-- 목적: Streamlit 레이아웃 요소 실습 (섹션, 구분선, 확장탭)
-- 실행: streamlit run 02_streamlit_layout.py
-- 작성자: 성진
-- 작성일: 2026-01-17
-- 주요 기능:
--   - st.header()로 섹션 구분
--   - st.divider() / st.markdown("---")로 구분선 추가
--   - st.expander()로 접히는 영역 구현
-## 파일명: 03_streamlit_form.py
-- 목적: Streamlit 입력 위젯을 활용한 회원가입 폼 구현
-- 작성자: 성진
-- 작성일: 2026-01-17
-- 주요 기능:
--   - 텍스트 입력 (이름, 자기소개)
--   - 숫자 입력 (나이, 키)
--   - 선택 요소 (성별, 좋아하는 색상, 관심사)
--   - 날짜 입력 (생일)
--   - 파일 업로드 (프로필 사진)
--   - 체크박스 및 버튼 (약관 동의, 회원가입)
- 
-## 파일명: 0004_streamlit_loadtest.py
-- 목적: 01, 02, 03 Streamlit 앱에 대해 사용자 입력 포함 부하 테스트 수행
-- 작성자: 성진
-- 작성일: 2026-01-17
-- 주요 기능:
--   - 별도 파일(users.csv)에서 사용자 데이터 읽기
--   - 입력 시간(사람 타이핑 시뮬레이션) 포함
--   - 5명 사용자 × 3회 반복 테스트
--   - 각 앱별 평균 응답시간 계산 및 결과 요약 출력
+03_streamlit_form.py  
+입력 위젯을 활용한 회원가입 폼 (텍스트, 숫자, 선택, 날짜, 파일 업로드, 체크박스)
+
+04_streamlit_dataframe_chart.py  
+데이터프레임 표시, 정적 테이블, 난수 기반 Line/Bar 차트 시각화
+
+05_streamlit_session_state.py  
+세션 상태 관리 예제 (사용자 입력 유지, 상태 공유)
+
+0004_streamlit_loadtest.py  
+사용자 입력 포함 부하 테스트 (users.csv 기반, 타이핑 시뮬레이션, 평균 응답시간 계산)
+```
