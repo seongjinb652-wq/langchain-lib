@@ -3,6 +3,7 @@
 ## 디렉터리 구조 : 하위 구조 없음.
 ## 주요 기능 요약 : 파일명 일치.
 ## 프로젝트 구조
+```
 streamlit/
 ├── 01_hello_streamlit.py
 ├── 02_streamlit_layout.py
@@ -13,6 +14,7 @@ streamlit/
 :
 ├── 
 └── README.md
+```
 
 ## 파일명: 01_hello_streamlit.py 
 - 목적: Streamlit 기본 사용법 
