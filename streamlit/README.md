@@ -8,6 +8,9 @@
 ```bash
 pip install streamlit pandas
 streamlit run <파일명>.py
+```
+
+
 ## 디렉터리 구조
 하위 구조 없음.
 
@@ -24,7 +27,7 @@ streamlit/
 ├── 
 └── README.md
 ```
-```
+
 주요 파일 요약
 01_hello_streamlit.py  
 기본 사용법 예제 (타이틀, 텍스트 출력, 입력창)
